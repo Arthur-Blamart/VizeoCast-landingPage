@@ -1,2 +1,2 @@
 RewriteEngine On
-RewriteRule ^app/?$ http://212.47.232.231 [R=301,L]
+RewriteRule ^app/?$ http://212.47.232.231:3000 [R=301,L]
