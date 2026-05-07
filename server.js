@@ -51,6 +51,10 @@ app.post('/api/contact', async (req, res) => {
   res.json({ success: true, message: 'Demande reçue, nous vous contactons rapidement.' });
 });
 
+app.get('/app', (req, res) => {
+  res.redirect('http://212.47.232.231:3000');
+});
+
 // Fallback to index.html for any unmatched route
 app.get('*', (req, res) => {
   res.sendFile(path.join(__dirname, 'public', 'index.html'));
